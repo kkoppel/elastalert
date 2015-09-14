@@ -6,6 +6,7 @@ import dateutil.parser
 import dateutil.tz
 
 elastalert_logger = logging.getLogger('elastalert')
+elastalert_logger.addHandler(logging.StreamHandler())
 
 
 def lookup_es_key(lookup_dict, term):
